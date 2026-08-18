@@ -1,8 +1,10 @@
 import snoopyGif from '../assets/snoop.gif'
 
 function Home() {
+  const navigate = useNavigate()
+
   const handleClick = () => {
-    window.location.href = '/Letter'
+    navigate('/letter')
   }
 
   return (
