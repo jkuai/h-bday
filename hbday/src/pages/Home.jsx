@@ -1,4 +1,5 @@
 import snoopyGif from '../assets/snoop.gif'
+import { useNavigate } from 'react-router-dom'
 
 function Home() {
   const navigate = useNavigate()

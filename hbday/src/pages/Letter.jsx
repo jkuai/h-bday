@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Loading from '../components/loading'
+import { useNavigate } from 'react-router-dom'
 
 function Letter() {
   const [loading, setLoading] = useState(true)
