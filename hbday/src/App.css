@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.app {
+  min-height: 100svh;
+  background-image: url('./assets/bg2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*home page*/
+.home-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home-page h1 {
+  font-family: "Darumadrop One", sans-serif;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.home-page p {
+  font-family: "Elms Sans", sans-serif;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.snoopy-gif {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.snoopy-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.snoopy-button:hover {
+  transform: scale(1.2) rotate(3deg);
+}
+
+/*loading page*/
+.loading-page {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  
+  background-image: url('./assets/bg2.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/*letter page*/
+.letter-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.letter-page h1 {
+  font-family: "Darumadrop One", sans-serif;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.letter-page p {
+  font-family: "Elms Sans", sans-serif;
+  font-size: 1.2rem;
+}
