@@ -116,3 +116,137 @@
   transform: translateY(4px);
   box-shadow: 0 1px 0 #222;
 }
+
+/*gifts page*/
+.gifts-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  box-sizing: border-box;
+}
+
+.gifts-header {
+  text-align: center;
+}
+
+.gifts-header h1 {
+  margin: 0;
+  color: #272644;
+  font-family: "Darumadrop One", sans-serif;
+}
+
+.gifts-header p {
+  margin-top: 10px;
+  font-family: "Elms Sans", sans-serif;
+  color: #272644;
+}
+
+/* Gifts */
+
+.gifts-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+
+  margin-top: 70px;
+}
+
+.gift-wrapper {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Gift GIF */
+
+.gift-button {
+  background: none;
+  border: none;
+  padding: 0;
+
+  cursor: pointer;
+
+  transition: transform 0.2s ease;
+}
+
+.gift-button img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.gift-button:hover {
+  transform: scale(1.08);
+}
+
+.gift-button:active {
+  transform: scale(0.95);
+}
+
+/* Bubble */
+
+.gift-note {
+  position: relative;
+
+  width: 190px;
+  margin-top: 20px;
+  padding: 15px 18px;
+
+  background: white;
+  border: 2px solid #333;
+  border-radius: 20px;
+
+  text-align: center;
+
+  animation: bubble-pop 0.25s ease-out;
+}
+
+/* Little triangle connecting bubble to gift */
+
+.gift-note {
+  width: 190px;
+  margin-top: 20px;
+  padding: 15px 18px;
+
+  background: white;
+  border: 2px solid #333;
+  border-radius: 20px;
+
+  text-align: center;
+
+  animation: bubble-pop 0.25s ease-out;
+}
+
+.gift-note p {
+  margin: 0;
+}
+
+@keyframes bubble-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Bubble animation */
+
+@keyframes bubble-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
