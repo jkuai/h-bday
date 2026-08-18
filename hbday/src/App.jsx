@@ -9,9 +9,9 @@ function App() {
   return (
     <div className="app">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/letter" element={<Letter />} />
-          <Route path="/gifts" element={<Gifts />} />
+          <Route path="/h-bday/" element={<Home />} />
+          <Route path="/h-bday/Letter" element={<Letter />} />
+          <Route path="/Gifts" element={<Gifts />} />
       </Routes>
     </div>
   )
