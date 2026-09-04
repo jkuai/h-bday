@@ -10,7 +10,7 @@ function Home() {
 
   return (
     <main className="home-page">
-      <h1>Happy Birthday Harrison!</h1>
+      <h1>Happy Birthday Love!</h1>
 
       <p>click on snoopy to grab the gift!</p>
 

@@ -1,40 +1,30 @@
-import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
-import gift1Gif from '../assets/snoop.gif'
+import gift1Gif from '../assets/gift1.gif'
 import gift2Gif from '../assets/snoop.gif'
-import gift3Gif from '../assets/snoop.gif'
 
 function Gifts() {
-  const [openGift, setOpenGift] = useState(null)
+  const navigate = useNavigate()
 
   const gifts = [
     {
       id: 1,
       gif: gift1Gif,
-      note: 'I love how you build things 😛 from the 3D printed toys and our super cool oishi-maker, ive always admired your creativity when looking for solutions',
+      page: '/gift1',
     },
     {
       id: 2,
       gif: gift2Gif,
-      note: 'I love it when we cook tgt 🍜 its funny how our relationship started with dumplings hehe, and the food we make is always yummy',
-    },
-    {
-      id: 3,
-      gif: gift3Gif,
-      note: 'stuffy or shirt?',
+      page: '/gift2',
     },
   ]
-
-  const handleGiftClick = (id) => {
-    setOpenGift(openGift === id ? null : id)
-  }
 
   return (
     <main className="gifts-page">
 
       <div className="gifts-header">
         <h1>wow gifts!</h1>
-        <p>some things that I love about you...</p>
+        <p>oo unboxing time...</p>
       </div>
 
       <div className="gifts-container">
@@ -42,17 +32,11 @@ function Gifts() {
           <div className="gift-wrapper" key={gift.id}>
 
             <button
-              className={`gift-button ${openGift === gift.id ? 'open' : ''}`}
-              onClick={() => handleGiftClick(gift.id)}
+              className="gift-button"
+              onClick={() => navigate(gift.page)}
             >
               <img src={gift.gif} alt={`Gift ${gift.id}`} />
             </button>
-
-            {openGift === gift.id && (
-              <div className="gift-note">
-                <p>{gift.note}</p>
-              </div>
-            )}
 
           </div>
         ))}

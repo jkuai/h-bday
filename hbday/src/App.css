@@ -142,7 +142,7 @@
 }
 
 .gifts-header p {
-  margin-top: 10px;
+  margin-top: 20px;
   font-family: "Elms Sans", sans-serif;
   color: #272644;
 }
@@ -191,66 +191,162 @@
   transform: scale(0.95);
 }
 
-/* Bubble */
 
-.gift-note {
-  position: relative;
+/* Gift 1 & Gift 2 Pages */
 
-  width: 190px;
-  margin-top: 20px;
-  padding: 15px 18px;
-
-  background: white;
-  border: 2px solid #333;
-  border-radius: 20px;
-
-  text-align: center;
-
-  animation: bubble-pop 0.25s ease-out;
+.gift-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 8%;
+  box-sizing: border-box;
 }
 
-/* Little triangle connecting bubble to gift */
+/* Back button */
 
-.gift-note {
-  width: 190px;
-  margin-top: 20px;
-  padding: 15px 18px;
+.back-button {
+  align-self: flex-start;
 
-  background: white;
-  border: 2px solid #333;
-  border-radius: 20px;
+  padding: 10px 18px;
 
-  text-align: center;
+  background: #fff;
+  border: 2px solid #222;
+  border-radius: 12px;
 
-  animation: bubble-pop 0.25s ease-out;
+  font-family: "Elms Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #272644;
+
+  cursor: pointer;
+
+  box-shadow: 0 4px 0 #222;
+  transition: all 0.1s ease;
 }
 
-.gift-note p {
+.back-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 #222;
+}
+
+.back-button:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #222;
+}
+
+
+/* Gift page header */
+
+.gift-header {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  padding-bottom: 15px;
+}
+
+.gift-header h1 {
+  margin: 0;
+
+  color: #272644;
+  font-family: "Darumadrop One", sans-serif;
+  font-size: 3rem;
+}
+
+.gift-header p {
+  margin-top: 20px;
+
+  color: #272644;
+  font-family: "Elms Sans", sans-serif;
+  font-size: 1.2rem;
+}
+
+
+/* Gift content */
+
+.gift-content {
+  width: 100%;
+  max-width: 1000px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 80px;
+}
+
+
+/* Gift image area */
+
+.gift-image {
+  width: 400px;
+  height: 400px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+.gift-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+
+/* Gift paragraph */
+
+.gift-text {
+  max-width: 400px;
+
+  font-family: "Elms Sans", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+
+  color: #272644;
+}
+
+.gift-text p {
   margin: 0;
 }
 
-@keyframes bubble-pop {
-  0% {
-    opacity: 0;
-    transform: scale(0.7);
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+  .gift-page {
+    padding: 30px 20px;
   }
 
-  100% {
-    opacity: 1;
-    transform: scale(1);
+  .gift-header {
+    margin-top: 30px;
+    margin-bottom: 40px;
   }
+
+  .gift-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .gift-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .gift-image {
+    width: 280px;
+    height: 280px;
+  }
+
+  .gift-text {
+    max-width: 500px;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
 }
 
-/* Bubble animation */
 
-@keyframes bubble-pop {
-  0% {
-    opacity: 0;
-    transform: scale(0.7);
-  }
-
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
