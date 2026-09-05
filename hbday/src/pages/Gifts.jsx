@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 
 import gift1Gif from '../assets/gift1.gif'
-import gift2Gif from '../assets/snoop.gif'
+import gift2Gif from '../assets/gift2.gif'
 
 function Gifts() {
   const navigate = useNavigate()

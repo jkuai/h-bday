@@ -1,5 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 
+import photo from "../assets/photo.gif";
+
 function Gift2() {
   const navigate = useNavigate()
 
@@ -21,8 +23,7 @@ function Gift2() {
       <div className="gift-content">
 
         <div className="gift-image">
-          {/* Put your gift image here */}
-          <img src="" alt="Gift 2" />
+          <img src={photo} alt="Gift 2" />
         </div>
 
         <div className="gift-text">
